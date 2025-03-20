@@ -1,0 +1,57 @@
+*{
+    color: white;
+}
+
+.bgSet{
+    background-image:url("https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w2208/mlb/dwmezfgkagx3ahvzrh0c.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+}
+
+
+input{
+    color:rgb(11, 31, 97);
+    background-color:  rgb(0, 83, 250);
+    font-size: 37px;
+    border-radius: 25px;
+    padding: 2px 16px;
+    margin: 8px 5px 8px 5px;
+    border: 1;
+    cursor: pointer;
+}
+
+.top-div{
+    background-image: url('https://shopstreetrebirth.com/cdn/shop/files/IMG_9621_5000x.png?v=1736218270');
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    background-color: rgba(158, 152, 152, 0.75);
+    background-blend-mode: multiply;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-div{
+    height: 900px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.sub2-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:960px) {
+    .second-div{
+        height: 600px;
+        grid-template-columns: 100%;
+        grid-template-rows: 80% 10% 10%;
+    }
+}
