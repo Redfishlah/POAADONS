@@ -62,9 +62,6 @@ input{
     align-items: center;
     justify-content: center;
 }
-.sub2-sub-div{
-    flex-direction: row;
-}
 
 @media(max-width:960px) {
     .second-div{

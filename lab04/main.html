@@ -29,14 +29,10 @@
         </div>
         <div class='sub2-div'>
             <img src="./Romance.png" class = 'pic'alt="Self photo" />
-            <!-- <input type="button" value="Another nice play" onclick="location.href='https:\/\/www.youtube.com/shorts/wV2-bDxRe50'" title="Gerrit Cole"></input> -->
         </div>
     </div>
     <div class = 'second-div'>
         <div class='sub2-div'>
-            <div class="sub2-sub-div">
-            <!-- <h1>留言板</h1> -->
-
             <label for="name">Name:</label>
             <input type="text" id="name" class = 'input2' placeholder="Your name">
         
@@ -44,7 +40,6 @@
             <input type="text" id="message" class = 'input2' placeholder="Leave a message.">
         
             <button class = 'input2' onclick="addMessage()">Submit</button>
-            </div>
         </div>   
 
         <div class='sub2-div'>
@@ -57,7 +52,6 @@
         <p>How many visitors now: <span id="visitorCount">0</span></p>
     </div>
     <script>
-       // 更新在線人數
        function updateVisitorCount(change) {
             let visitorCount = parseInt(sessionStorage.getItem("onlineUsers") || "0");
             visitorCount += change;
@@ -65,17 +59,14 @@
             document.getElementById("visitorCount").textContent = visitorCount;
         }
 
-        // 用戶進入時 +1
         window.addEventListener("load", () => updateVisitorCount(1));
-
-        // 用戶離開時 -1
         window.addEventListener("beforeunload", () => updateVisitorCount(-1));
 
         function addMessage() {
             const name = document.getElementById("name").value.trim();
             const message = document.getElementById("message").value.trim();
             if (!name || !message) {
-                alert("請輸入名稱和留言！");
+                alert("Please insert your name and a message to me :)");
                 return;
             }
             const board = document.getElementById("board");
